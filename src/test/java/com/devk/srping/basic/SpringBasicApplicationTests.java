@@ -1,10 +1,10 @@
-package com.devk.crud.crudexample;
+package com.devk.srping.basic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CrudExampleApplicationTests {
+class SpringBasicApplicationTests {
 
 	@Test
 	void contextLoads() {
