@@ -3,15 +3,19 @@ package com.devk.srping.basic.service;
 import com.devk.srping.basic.domain.Member;
 import com.devk.srping.basic.repository.MemberRepository;
 import com.devk.srping.basic.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
     //여기서 new MemberRepository() 를 하지 않고 외부에서 생성하여 생성자에 넣어주자.(DI)
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
