@@ -1,4 +1,5 @@
-package hello.hellospring.service;
+package com.devk.srping.basic.service;
+
 import com.devk.srping.basic.domain.Member;
 import com.devk.srping.basic.repository.MemberRepository;
 import com.devk.srping.basic.service.MemberService;
