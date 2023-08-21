@@ -1,5 +1,6 @@
 package com.devk.srping.basic;
 
+import com.devk.srping.basic.aop.TimeTraceAop;
 import com.devk.srping.basic.repository.JdbcTemplateMemberRepository;
 import com.devk.srping.basic.repository.JpaMemberRepository;
 import com.devk.srping.basic.repository.MemberRepository;
@@ -26,6 +27,11 @@ public class SpringConfig {
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 
 //    private EntityManager em;
 //
